@@ -1,0 +1,176 @@
+h1{
+    text-align: center;
+    color: orange;
+}
+
+.borderone{
+    border: 5px dotted red;
+}
+
+.bordertwo{
+    border-top: 10px solid yellow;
+    border-left: 10px solid yellow;
+}
+
+.borderthree{
+    border-color: gray green;
+    /* border-style: solid;
+    T & R & B & L;
+    border-style: solid dotted;
+    T/B & L/R 
+    border-style: solid dotted double;
+    T & R & B & L */
+    border-style: solid dotted dashed;
+/* T & R & B & L */
+}
+
+.borderwidth{
+    border-style: solid;
+    border-width: 3px 30px;
+}
+
+.marginone{
+    margin: 10px 30px 40px 100px;
+}
+
+.margintwo{
+    margin-top: 100px;
+}
+
+.padding{
+    /* padding 100px */
+    padding-top: 50px;
+    border: 1px solid red;
+}
+
+/* Layout */
+
+.inline{
+    border: 2px solid red;
+    display: inline-block;
+    width: 480px;
+}
+
+.Block{
+    border: 2px solid orange;
+    width: 400px;
+    display: inline-block;
+}
+
+/* Float Lesson */
+
+.float_right img{
+width: 45%;
+float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.float_left img{
+    width: 40%;
+    float: left;
+}
+
+/* gird lesson */
+
+.gridone{
+    padding: 20px;
+    text-align: center;
+}
+
+.gridone div, .girdtwo div, .gridthree div .gridfour div, .gridfive div{
+    padding: 20px;
+    color: aqua;
+    text-align: center;
+}
+
+.girdone, .gridtwo, .gridthree, .gridfour, .girdfive{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gridone{
+    display: grid;
+    /* grid-template-columns: auto 700px auto; */
+    grid-template-columns: 350px 680px auto;
+}
+
+.gridtwo{
+    grid-column-gap: 40px;
+}
+
+.gridthree{
+    grid-row-gap: 40px;
+    /* grid-gap: 40px; */
+    grid-column-gap: 70px;
+}
+
+.columnadd{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.rowadd{
+    grid-row-start: 2;
+    grid-row-end: 5;
+} 
+
+/* Position Lesson */
+
+.parent_absolute{
+    width: 1250px;
+    height: 500px;
+    border: 3px solid red;
+    /* position: relative; */
+}
+
+.absolute{
+    width: 500px;
+    height: 350px;
+    border: 2px solid blue;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+}
+
+.parent_relative{
+    width: 1200px;
+    height: 450px;
+    border: 3px solid yellow;
+}
+
+.relative{
+    width: 450px;
+    height: 300px;
+    border: 2px solid brown;
+    position: relative;
+    top: 35px;
+    left: 80px;
+}
+
+.fixed{
+    position: fixed;
+    top: 80px;
+    left: 800px;
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 400 */
+
+.online{
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "playwrite";
+    src: url(Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+.offline{
+    font-family: "playwrite";
+}

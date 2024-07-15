@@ -25,3 +25,76 @@ a[title="google"]{
     letter-spacing: 15px;
     line-height: 30px;
 }
+
+/* descendant selector */
+
+div p{
+    background-color: green;
+}
+
+/* child selector */
+
+div>p{
+    background-color: black;
+}
+
+span>p{
+    background-color: purple;
+}
+
+/* Pesudo selector >> Hover selector*/
+h1 a:hover{
+    color: green;
+    font-size: 60px;
+    background-color: purple;
+}
+
+h1:hover{
+    color: yellow;
+}
+
+/* Before click to link hover */
+h2 a:link{
+    color: blue;
+}
+
+/* After click to link, hover color change */
+h2 a:visited{
+    color: gray;
+}
+
+/* When click pointer to get over in the text, color change a few sec */
+h2 a:active{
+    color: red;
+}
+
+h2 a:hover{
+    color: pink;
+}
+/* 
+Target */
+/* :target{
+    color: green;
+    border: 10px dotted black;
+    line-height: 25px;
+} */
+
+p:target{
+    color: green;
+    border: 10px dotted red;
+    line-height: 25px;
+}
+
+/* Position Lesson */
+
+.position_absolute{
+    width: 1250px;
+    height: 500px;
+    border: 3px solid red;
+}
+
+.absolute{
+    width: 500px;
+    height: 350px;
+    border: 2px solid blue;
+}
