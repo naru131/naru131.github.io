@@ -82,3 +82,39 @@ carousel_text h2{
 .shop_now:hover{
     cursor: pointer;
 }
+
+/* Start Service */
+
+.service_text{
+    display: inline-block;
+}
+
+.service_title{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.service{
+    margin: 30px 150px 0px;
+    border: 1px solid gray;
+    /* border-radius: 5px; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 30px;
+    
+
+}
+
+.service_div{
+    /* grid-column-gap: 50px;
+    grid-row-gap: 15px; */
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 25px;
+}
+
+.service_desc{
+    color: gray;
+}
