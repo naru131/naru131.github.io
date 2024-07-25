@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Lesson</title>
+</head>
+<body>
+    <h1>Object Lesson</h1>
+    <script>
+
+        let hotel ={
+            name :"GoodDay",
+            color : "Gray",
+            room : 50,
+            booking :25,
+            gym : true,
+            roomType : ['single','double','twinbed','familyroom'],
+
+            checkRoom :function(){
+                return this.room - this.booking;
+
+            }
+        }
+
+        document.write(`Hotel name is $(hotel.name)`);
+
+        let result = hotel.checkRoom();
+        console.log(result);
+
+
+
+    </script>
+</body>
+</html>
