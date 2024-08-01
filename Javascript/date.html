@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date lesson and homework</title>
+</head>
+<body>
+    <h1>Date Lesson and Homework</h1>
+
+    <p id="myClock"></p>
+
+    <div class="display_date">
+        <div class="datetime" style="padding: 30px;">
+            <span id="hr" style="color: red; font-size: 40px;">00</span>
+            <span style="font-size: 50px;"> : </span>
+            <span id="min" style="color: red; font-size: 40px;">00</span>
+            <span style="font-size: 50px;"> : </span>
+            <span id="sec" style="color: red; font-size: 40px;">00</span>
+            <span id="time" style="color: black; font-size: 15px;">AM</span>
+        </div>
+    </div>
+
+    <script>
+        // let todayDate = new Date();
+        // console.log(todayDate);
+        // console.log(todayDate.getDay);
+        // console.log(todayDate.getFullYear);
+        // console.log(todayDate.getMonth);
+        // console.log(todayDate.getSeconds);
+        // console.log(todayDate.getHours);
+        // console.log(todayDate.toLocaleString);
+        // console.log(todayDate.toLocaleTimeString);
+
+        // function getSecond(){
+        //     let myDate = new Date();
+        //     let second = myDate.getSeconds();
+        //     document.getElementById('myClock').innerHTML = second;
+
+        // }
+
+        // setInterval(getSecond,1000); 
+
+        setInterval(()=>{
+
+        let HR = document.getElementById("hr");
+        let Min = document.getElementById("min");
+        let Sec = document.getElementById("sec");
+        let Time = "AM";
+
+            let todayDate = new Date();
+
+            if(HR >12){
+                Time = "PM";
+                HR = HR - 12;
+            }
+
+        // HR.innerHTML = todayDate.getHours();
+        // Min.innerHTML = todayDate.getMinutes();
+        // Sec.innerHTML = todayDate.getSeconds();
+
+        HR.innerHTML = (todayDate.getHours() < 10? "0" : "") + todayDate.getHours();
+        Min.innerHTML = (todayDate.getMinutes() < 10? "0" : "") + todayDate.getMinutes();
+        Sec.innerHTML = (todayDate.getSeconds() < 10? "0" : "") + todayDate.getSeconds();
+        Time.innerHTML = todayDate.getElementById($`{time}`);
+
+        }, 1000);
+
+
+            // function updatedDate(){
+            //     let todayDate = new Date();
+            //     let Day = todayDate.getDay();
+            //     Time = "AM";
+            // }
+
+        
+        
+
+        // function getHours(){
+        //     let todayDate = new Date();
+
+        //     let hour = todayDate.getHours();
+           
+        //     document.getElementById('hr').innerHTML = hour;
+        // }
+
+        // function getMinutes(){
+        //     let myDate = new Date();
+
+        //     let min = myDate.getMinutes();
+
+        //     document.getElementById('min').innerHTML = minutes;
+        // }
+
+        // function getSeconds(){
+        //     let myDate = new Date();
+
+        //     let sec = myDate.getSeconds();
+
+        //     document.getElementById('sec').innerHTML = seconds;
+        // }
+
+        // setInterval(getSecond,1000);
+        
+
+    </script>
+</body>
+</html>
