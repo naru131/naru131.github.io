@@ -24,15 +24,27 @@
     <script src="jquery-3.7.1.min.js"></script>
 
     <script>
+        // $(document).ready(function(){
+        //     $('#start_btn').click(function(){
+        //         $('#pannel').animate({left:'550px'},3000); // .animate(css,speed, callback)
+        //     })
+
+        //     $('#stop_btn').click(function(){
+        //         $('#pannel').stop();
+        //     })
+        // })
+
+        
         $(document).ready(function(){
             $('#start_btn').click(function(){
-                $('#pannel').animate({left:'550px'},3000); // .animate(css,speed, callback)
+                $('#pannel').animate({left:'550px'},5000);
+                $('#pannel').animate({top:'550px'},5000);
+                $('#pannel').animate({left:'-=550px'},5000);
+                $('#pannel').animate({top:'-=550px'},5000);
             })
 
-            $('#stop_btn').click(function(){
-                $('#pannel').stop();
-            })
         })
+    
     </script>
 </body>
 </html>
