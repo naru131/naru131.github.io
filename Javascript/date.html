@@ -11,7 +11,10 @@
     <p id="myClock"></p>
 
     <div class="display_date">
-        <div class="datetime" style="padding: 30px;">
+        <div class="weekday" style="padding-left: 50px; font-size: 35px;">
+            <p id="day">Sunday</p>
+        </div>
+        <div class="datetime" style="padding-left: 30px; padding-top: 0px;">
             <span id="hr" style="color: red; font-size: 40px;">00</span>
             <span style="font-size: 50px;"> : </span>
             <span id="min" style="color: red; font-size: 40px;">00</span>
@@ -47,22 +50,33 @@
         let Min = document.getElementById("min");
         let Sec = document.getElementById("sec");
         let Time = "AM";
+        let dayname = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 
             let todayDate = new Date();
 
             if(HR >12){
                 Time = "PM";
-                HR = HR - 12;
-            }
+                HR -= 12;
+            }if(HR == 0){
+
+            HR = 12;
+            Time=" AM "
+            } 
+
 
         // HR.innerHTML = todayDate.getHours();
         // Min.innerHTML = todayDate.getMinutes();
         // Sec.innerHTML = todayDate.getSeconds();
 
+        
+    
+        // document.getElementById('day').innerHTML = dayname[day];
+
         HR.innerHTML = (todayDate.getHours() < 10? "0" : "") + todayDate.getHours();
         Min.innerHTML = (todayDate.getMinutes() < 10? "0" : "") + todayDate.getMinutes();
         Sec.innerHTML = (todayDate.getSeconds() < 10? "0" : "") + todayDate.getSeconds();
-        Time.innerHTML = todayDate.getElementById($`{time}`);
+        Time.innerHTML = (todayDate.getElementById($`{time}`));
+        dayname.innerHTML = (todayDate.getElementById($`{day}`));
 
         }, 1000);
 
