@@ -3,120 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Date lesson and homework</title>
+    <title>Document</title>
 </head>
-<body>
-    <h1>Date Lesson and Homework</h1>
-
-    <p id="myClock"></p>
-
-    <div class="display_date">
-        <div class="weekday" style="padding-left: 50px; font-size: 35px;">
-            <p id="day">Sunday</p>
-        </div>
-        <div class="datetime" style="padding-left: 30px; padding-top: 0px;">
-            <span id="hr" style="color: red; font-size: 40px;">00</span>
-            <span style="font-size: 50px;"> : </span>
-            <span id="min" style="color: red; font-size: 40px;">00</span>
-            <span style="font-size: 50px;"> : </span>
-            <span id="sec" style="color: red; font-size: 40px;">00</span>
-            <span id="time" style="color: black; font-size: 15px;">AM</span>
-        </div>
-    </div>
-
-    <script>
-        // let todayDate = new Date();
-        // console.log(todayDate);
-        // console.log(todayDate.getDay);
-        // console.log(todayDate.getFullYear);
-        // console.log(todayDate.getMonth);
-        // console.log(todayDate.getSeconds);
-        // console.log(todayDate.getHours);
-        // console.log(todayDate.toLocaleString);
-        // console.log(todayDate.toLocaleTimeString);
-
-        // function getSecond(){
-        //     let myDate = new Date();
-        //     let second = myDate.getSeconds();
-        //     document.getElementById('myClock').innerHTML = second;
-
-        // }
-
-        // setInterval(getSecond,1000); 
-
-        setInterval(()=>{
-
-        let HR = document.getElementById("hr");
-        let Min = document.getElementById("min");
-        let Sec = document.getElementById("sec");
-        let Time = "AM";
-        let dayname = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
-
-            let todayDate = new Date();
-
-            if(HR >12){
-                Time = "PM";
-                HR -= 12;
-            }if(HR == 0){
-
-            HR = 12;
-            Time=" AM "
-            } 
-
-
-        // HR.innerHTML = todayDate.getHours();
-        // Min.innerHTML = todayDate.getMinutes();
-        // Sec.innerHTML = todayDate.getSeconds();
-
+    <body>
+        
+            <p id="day" style="padding-left: 30px; padding-bottom: 0px; font-size: 30px;">Sunday</p>
+            <p><span id="hours" style="padding: 30px; color: red; font-size: 30px;">05</span> : <span id="minute" style="padding: 30px; color: red; font-size: 30px;">41</span> : <span id="second" style="padding: 30px; color: red; font-size: 30px;">42</span><span id="am_pm"> PM</span></p>
         
     
-        // document.getElementById('day').innerHTML = dayname[day];
-
-        HR.innerHTML = (todayDate.getHours() < 10? "0" : "") + todayDate.getHours();
-        Min.innerHTML = (todayDate.getMinutes() < 10? "0" : "") + todayDate.getMinutes();
-        Sec.innerHTML = (todayDate.getSeconds() < 10? "0" : "") + todayDate.getSeconds();
-        Time.innerHTML = (todayDate.getElementById($`{time}`));
-        dayname.innerHTML = (todayDate.getElementById($`{day}`));
-
-        }, 1000);
-
-
-            // function updatedDate(){
-            //     let todayDate = new Date();
-            //     let Day = todayDate.getDay();
-            //     Time = "AM";
-            // }
-
-        
-        
-
-        // function getHours(){
-        //     let todayDate = new Date();
-
-        //     let hour = todayDate.getHours();
-           
-        //     document.getElementById('hr').innerHTML = hour;
-        // }
-
-        // function getMinutes(){
-        //     let myDate = new Date();
-
-        //     let min = myDate.getMinutes();
-
-        //     document.getElementById('min').innerHTML = minutes;
-        // }
-
-        // function getSeconds(){
-        //     let myDate = new Date();
-
-        //     let sec = myDate.getSeconds();
-
-        //     document.getElementById('sec').innerHTML = seconds;
-        // }
-
-        // setInterval(getSecond,1000);
-        
-
-    </script>
-</body>
+        <script>
+            let todayDate = new Date();
+    
+    
+            function getSeconds(){
+                let myDate = new Date();
+                let day = myDate.getDay();
+                let hour = myDate.getHours();
+                let minute = myDate.getMinutes();
+                let second = myDate.getSeconds();
+                let am_pm ;
+    
+                if(hour > 12){
+    
+                    hour -= 12;
+                    am_pm = " PM "
+                } 
+                if(hour == 0){
+    
+                    hour = 12;
+                    am_pm=" AM "
+                } 
+    
+                hour = (hour<10) ? "0"+hour : hour;
+                minute = (minute<10) ? "0"+minute : minute;
+                second = (second<10) ? "0"+second : second;
+    
+                let dayname = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    
+                document.getElementById('day').innerHTML = dayname[day];
+                document.getElementById('hours').innerHTML = hour;
+                document.getElementById('minute').innerHTML = minute;
+                document.getElementById('second').innerHTML = second;
+                document.getElementById('am_pm').innerHTML = am_pm;
+                console.log(am_pm);
+    
+                
+            }
+    
+            setInterval(getSeconds,1000);
+    
+    
+        </script>
+    
+    </body>
 </html>
