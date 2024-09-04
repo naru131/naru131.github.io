@@ -367,53 +367,6 @@
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-/* Player Details */
-/* 
-.container{
-    padding-top: 40px;
-}
-
-.row{
-    display: inline-block;
-}
-
-.p-img img{ */
-    /* box-shadow: 0px 3px 3px 3px #d4d4d4, -3px -3px 3px #ffffff; */
-    /* border-radius: 50%;
-    overflow: hidden; 
-}
-
-.back-no{
-    color: red !important;
-    font-size: 35px;
-    margin-left: 85px;
-    margin-top: 10px;
-}
-
-.details-name .h3-name{
-    color: white;
-    margin-left: 20px;
-}
-
-.player-title-text{
-    color: #fff;
-    font-weight: 800;
-    line-height: 32px;
-    padding: 0 15px;
-    text-transform: uppercase;
-    white-space: nowrap;
-} */
-
-/* .player-title-line{
-    color: #454545;
-    background: #454545;
-    content: "";
-    flex-grow: 1;
-    height: 1px;
-    width: 100%;
-} */
-/* 
-
 
 /* Coach Phili Section */
 .coach-section{
@@ -424,9 +377,19 @@
     border-radius: 5px;
 }
 
+.coach-info-text h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.coach-info-text p{
+    font-size: 15px;
+}
+
 /* Player Details Section */
 .player-bio-details{
     padding-top: 70px;
+    margin-bottom: 70px;
 }
 
 .palyer-bio-box{
@@ -458,6 +421,7 @@
     justify-content: space-between;
     text-align: left;
     padding-left: 0;
+    display: block;
 }
 
 .bgcolor{
@@ -467,22 +431,53 @@
     padding: 10px;
 }
 
-.bio-box .player-bio-head{
-    color: red;
+.first-player-box{
+    float: left;
+    align-items: center;
     text-align: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-left: 40px;
+    /* border-right: 2px solid rgba(0, 0, 0, 0.3); */
 }
 
-.bio-box .player-bio-text{
+.first-player-box .player-bio-head{
+    color: red;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.first-player-box .player-bio-text{
     color: white;
     text-align: center;
 }
 
-.player-bio-head, .player-bio-text{
-    text-align: right;
-    border-right: 2px solid rgba(0, 0, 0, 0.3);
+.stats-info ul{
+    display: flex;
+    flex: wrap;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 2px;
+    font-size: 14px;
 }
+
+.stats-info ul li{
+    display: inline-block;
+    flex: 1;
+}
+
+.stats-info ul li p{
+    color: #807878;
+}
+
+.stats-info ul li b{
+    color: white;
+}
+
+/* .player-bio-head, .player-bio-text{
+    justify-content: space-between;
+    border-right: 2px solid rgba(0, 0, 0, 0.3);
+    text-align: right;
+} */
 
 .player-detail-title .player-title-text{
     color: white;
@@ -509,6 +504,7 @@
     
 } */
 
+
 /* about section */
 .about{
     padding-top: 30px;
@@ -524,7 +520,7 @@
 }
 
 .container .row{
-    padding: 25px;
+   padding: 25px;
 }
 
 .about-1 h4{
@@ -768,6 +764,9 @@
 }
 
 /* Footer Section */
+.footer-info{
+    margin-top: 20px;
+}
 .footer h3{
     color: red !important;
     font-size: 20px;
@@ -775,6 +774,9 @@
 .footer .footer-text p{
     padding-top: 15px;
     line-height: 20px;
+}
+.footer .footer-end .footer-icon{
+    padding-bottom: 10px;
 }
 
 .footer .footer-end .footer-icon a{
