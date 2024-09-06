@@ -815,6 +815,27 @@ window.addEventListener('load',activate,false);
         </script> 
         <!-- plug in script end -->
 
+        <!-- Login Script Start -->
+        <script>
+
+        const wrapper = document.querySelector('.wrapper');
+        const loginLink = document.querySelector('.login-link');
+        const registerLink = document.querySelector('.register-link');
+
+        registerLink.addEventListener('click',()=>{
+            wrapper.classList.add('active');
+        });
+
+        loginLink.addEventListener('click',()=>{
+            wrapper.classList.remove('active');
+        });
+
+
+        </script>
+        
+
+        <!-- Login Script End -->
+
     <script src="jquery-3.7.1.min.js"></script> 
     <script src="main.js"></script>    
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
