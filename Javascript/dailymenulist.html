@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Menu List </title>
+</head>
+<body>
+    <h1 style="text-align: center; color: red;">Daily Menu Lists</h1>
+
+    <form action="" name="myForm">
+        <label for="date">Date</label>
+        <input type="date" name="date" id=""><br>
+        <label for="name">Name</label>
+        <input type="text" name="name" id=""><br>
+        <label for="price">Price</label>
+        <input type="number" name="price" id=""><br>
+        <button type="button" onclick="showData()">Submit</button>
+
+    </form>
+
+    <h1>Daily Menu Lists</h1>
+    <table border="1" cellpadding="30" cellspacing="1">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="myBody">
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Toatl</td>
+                <td id="totalPrice"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+        var menuArray = [];
+        function showData(){
+            // get data from form
+            let date = document.myForm.date.value;
+            let name = document.myForm.name.value;
+            let price = parseInt(document.myForm.price.value);
+           
+            // console.log(date,name,price);
+        
+
+            // create one object
+            let menu = {
+                menu_date : date,
+                menu_name : name,
+                menu_price : price
+               
+            }
+            //  console.log(menu);
+
+            // //array push data
+            menuArray.push(menu);
+            // console.log(menuArray);
+
+             getData();
+
+         }
+
+           function getData(){
+        let total = 0;
+        let html = ` `;
+        for (let i =0; i<menuArray.length; i++){
+            //console.log(menuArray[i]);
+            let menuObj = menuArray[i];
+            html += `
+            <tr> 
+                <td> ${i+1}</td>
+                <td> ${menuObj.menu_date}</td>
+                <td> ${menuObj.menu_name}</td>
+                <td> ${menuObj.menu_price}</td>
+            </tr>`;
+
+            total += menuObj.menu_price;
+        }
+        document.getElementById('myBody').innerHTML = html;
+        document.getElementById('totalPrice').textContent= parseInt(total);
+    }
+
+        
+    </script>
+    
+</body>
+</html>

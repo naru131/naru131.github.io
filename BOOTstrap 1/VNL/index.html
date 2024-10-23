@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evangeline</title>
+    <link rel="icon" href="Image/logo-black.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+    <!-- Start Navigation -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid mx-md-2 mx-lg-2">
+            <a href="index.html" class="navbar-brand ms-lg-2">
+            
+                 Japan Men's Volleyball
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav_hover me-3 active_page" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link nav_hover me-3">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="player.html" class="nav-link nav_hover me-3 dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Players
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="01Yuji.html">01 Yuji</a></li>
+                            <li><a class="dropdown-item" href="02Onodera.html">02 Onodera</a></li>
+                            <li><a class="dropdown-item" href="03Fukatsu.html">03 Fukatsu</a></li>
+                            <li><a class="dropdown-item" href="04Miyaura.html">04 Miyaura</a></li>
+                            <li><a class="dropdown-item" href="05Otsuka.html">05 Otsuka</a></li>
+                            <li><a class="dropdown-item" href="06Yamauchi.html">06 Yamauchi</a></li>
+                            <li><a class="dropdown-item" href="08Sekita.html">08 Sekita</a></li>
+                            <li><a class="dropdown-item" href="10Kentaro.html">10 Kentaro</a></li>
+                            <li><a class="dropdown-item" href="11Shoma.html">11 Shoma</a></li>
+                            <li><a class="dropdown-item" href="12Ran.html">12 Ran</a></li>
+                            <li><a class="dropdown-item" href="14Yuki.html">14 Yuki</a></li>
+                            <li><a class="dropdown-item" href="15Kai.html">15 Kai</a></li>
+                            <li><a class="dropdown-item" href="20Yamamoto.html">20 Yamamoto</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link nav_hover me-3">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="fun.html" class="nav-link nav_hover me-3">Fun Zone</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="course.html" class="nav-link nav_hover me-3">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="course.html" class="nav-link nav_hover me-3">Login</a>
+                    </li> -->
+                </ul>
+                <form action="" class="justify-content-end me-3">
+                    <!-- <button class="btnLogin-popup">Login <i class="fa-solid fa-user ms-3"></i></button> -->
+                    <a href="#btnLogin-popup" class="btn btnLogin-popup btn-danger btn-lg" type="button">Login In <i class="fa-solid fa-user ms-3"></i></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation -->
+
+    <!-- Start Sign-In Section  -->
+
+        <!-- <div class="wrapper" id="btnLogin-popup">
+            <span class="icon-close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" required="" id="">
+                        <label for="eamil">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required="" id="">
+                        <label for="eamil">Password</label>
+                    </div>
+                    <div class="remember-forget">
+                        <label for=""><input type="checkbox" name="" id="">Remember Me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn-signin">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>    
+                
+            <div class="form-box register">
+                <h2>Registeration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" required="" id="">
+                        <label for="name">Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" required="" id="">
+                        <label for="eamil">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required="" id="">
+                        <label for="eamil">Password</label>
+                    </div>
+                    <div class="remember-forget">
+                        <label for=""><input type="checkbox" name="" id="">I agree the terms & conditions</label>
+                        
+                    </div>
+                    <button type="submit" class="btn-signin">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="" class="login-link"> Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div> -->
+   
+
+    <!-- End Sign-IN Seciton -->
+
+
+    <!-- Start Banner -->
+     <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Jp men NV Team/VNL img/court 8.jpg" alt="" class="d-block w-100">
+                <div class="carousel_text position-absolute text-white">
+                    <h3>THE FINALS - VNL <br>2024</h3>
+                    <p class="mt-lg-3 d-none d-lg-block">Stream the VNL 2024 Finals on VBTV and catch every epic play !</p>
+                    <div class="mt-md-4 mt-lg-5 d-none d-md-block">
+                        <button class="btn btn-danger btn-lg">Get Start !</button>         
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Jp men NV Team/VNL img/wp 2.jpeg" alt="" class="d-block w-100">
+                <div class="carousel_text position-absolute text-white">
+                    <h3>SET, SPIKE, STREAM ! <br>ACE</h3>
+                    <p class="mt-lg-3 d-none d-lg-block">Immerse in volleyball thrill with VBTB! USA fans, enjoy our year-rond streaming with top matchs: Beach Pro Tour : <br> VNL 2024, Big Ten and More !</p>
+                    <div class="mt-lg-5 d-none d-md-block">
+                        <button class="btn btn-danger btn-lg">Get Start !</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Jp men NV Team/VNL img/wp 3.jpeg" alt="" class="d-block w-100">
+                <div class="carousel_text position-absolute text-white">
+                    <h3>BEACH PRO TOUR : <br>ELITE16</h3>
+                    <p class="mt-lg-3 d-none d-lg-block">Follow the intense beach action on the sandy beaches of Hamburg, Germany during the tournament! Stream LIVE On VBTV</p>
+                    <div class="mt-lg-5 d-none d-md-block">
+                        <button class="btn btn-danger btn-lg">Get Start !</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next " type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+     </div>
+     <!-- End Banner -->
+
+     <!-- Start Slide Card  -->
+      <div class="container" id="box">
+        <div class="row">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="Jp men NV Team/VNL img/team 1.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="Jp men NV Team/VNL img/team 3.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="Jp men NV Team/VNL img/team 4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- End Slide Card -->
+     
+
+        <!-- Start Players -->
+         <section class="team_player" id="team_player">
+            <div class="team_title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="title_text text-center mb-5">
+                                <p class="sub-title mb-3">Team Players</p>
+                                <h2 class="h2-title">Our Best Player, <span>Match of Paris Olympic</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <!-- Start view all section  -->
+                     <div class="player">
+                        <h2 class="player-title">Our Best Players<a href="#">View All >></a></h2>
+                     </div>
+                     <!-- End view all section -->
+                    <div class="player-list-row">
+                        <div class="row g-xxl-5 bydefault_show" id="player-list">
+                            <!-- 01 -->
+                            <div class="col-lg-4 col-sm-6 list-box-wp OP" data-cat="OP">
+                                <div class="list-box text-center">
+                                    <div class="player-img">
+                                        <img src="Jp men NV Team/01 Yuji/5.jpeg" alt="">
+                                    </div>
+                                    <div class="player-no">
+                                        <h5>01</h5>
+                                    </div>
+                                    <div class="player-name">
+                                        <h3 class="h3-name">Yuji Nishida</h3>
+                                    </div>
+                                    <div class="player-info">
+                                        <ul type="none">
+                                            <li>
+                                                <p>Position</p>
+                                                <b>OP</b>
+                                            </li>
+                                            <li>
+                                                <p>Club</p>
+                                                <b>Panasonic Panthers</b>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="player-list-footer">
+                                        <a href="01Yuji.html" class="btn btn-danger">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 02 -->
+                            <div class="col-lg-4 col-sm-6 list-box-wp MB" data-cat="MB">
+                                <div class="list-box text-center">
+                                    <div class="player-img">
+                                        <img src="Jp men NV Team/02 Onodera/1.jpeg" alt="">
+                                    </div>
+                                    <div class="player-no">
+                                        <h5>02</h5>
+                                    </div>
+                                    <div class="player-name">
+                                        <h3 class="h3-name">Taishi Onodera</h3>
+                                    </div>
+                                    <div class="player-info">
+                                        <ul type="none">
+                                            <li>
+                                                <p>Position</p>
+                                                <b>MB</b>
+                                            </li>
+                                            <li>
+                                                <p>Club</p>
+                                                <b>Suntory Sunbirds</b>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="player-list-footer">
+                                        <a href="02Onodera.html" class="btn btn-danger">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 03 -->
+                            <div class="col-lg-4 col-sm-6 list-box-wp S" data-cat="S">
+                                <div class="list-box text-center">
+                                    <div class="player-img">
+                                        <img src="Jp men NV Team/03 Akihiro/1.jpeg" alt="">
+                                    </div>
+                                    <div class="player-no">
+                                        <h5>03</h5>
+                                    </div>
+                                    <div class="player-name">
+                                        <h3 class="h3-name">Akihiro Fukatsu</h3>
+                                    </div>
+                                    <div class="player-info">
+                                        <ul type="none">
+                                            <li>
+                                                <p>Position</p>
+                                                <b>S</b>
+                                            </li>
+                                            <li>
+                                                <p>Club</p>
+                                                <b>Tokyo Great Bears</b>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="player-list-footer">
+                                        <a href="03Fukatsu.html" class="btn btn-danger">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 04 -->
+                            <div class="col-lg-4 col-sm-6 list-box-wp OP" data-cat="OP">
+                                <div class="list-box text-center">
+                                    <div class="player-img">
+                                        <img src="Jp men NV Team/04 Kento Miyu/1.jpeg" alt="">
+                                    </div>
+                                    <div class="player-no">
+                                        <h5>04</h5>
+                                    </div>
+                                    <div class="player-name">
+                                        <h3 class="h3-name">Kento Miyaura</h3>
+                                    </div>
+                                    <div class="player-info">
+                                        <ul type="none">
+                                            <li>
+                                                <p>Position</p>
+                                                <b>OP</b>
+                                            </li>
+                                            <li>
+                                                <p>Club</p>
+                                                <b>JTEKT Stings</b>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="player-list-footer">
+                                        <a href="04Miyaura.html" class="btn btn-danger">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 05 -->
+                            <div class="col-lg-4 col-sm-6 list-box-wp OH" data-cat="OH">
+                                <div class="list-box text-center">
+                                    <div class="player-img">
+                                        <img src="Jp men NV Team/05 Tatsunori/1.jpeg" alt="">
+                                    </div>
+                                    <div class="player-no">
+                                        <h5>05</h5>
+                                    </div>
+                                    <div class="player-name">
+                                        <h3 class="h3-name">Tatsunori Otsuka</h3>
+                                    </div>
+                                    <div class="player-info">
+                                        <ul type="none">
+                                            <li>
+                                                <p>Position</p>
+                                                <b>OH</b>
+                                            </li>
+                                            <li>
+                                                <p>Club</p>
+                                                <b>Panasonic Panthers</b>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="player-list-footer">
+                                        <a href="05Otsuka.html" class="btn btn-danger">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 06 -->
+                            <div class="col-lg-4 col-sm-6 list-box-wp MB" data-cat="MB">
+                                <div class="list-box text-center">
+                                    <div class="player-img">
+                                        <img src="Jp men NV Team/06 Akihiro/3.jpeg" alt="">
+                                    </div>
+                                    <div class="player-no">
+                                        <h5>06</h5>
+                                    </div>
+                                    <div class="player-name">
+                                        <h3 class="h3-name">Akihiro Yamauchi</h3>
+                                    </div>
+                                    <div class="player-info">
+                                        <ul type="none">
+                                            <li>
+                                                <p>Position</p>
+                                                <b>MB</b>
+                                            </li>
+                                            <li>
+                                                <p>Club</p>
+                                                <b>Panasonic Panthers</b>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="player-list-footer">
+                                        <a href="06Yamauchi.html" class="btn btn-danger">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 08 -->
+                            <div class="col-lg-4 col-sm-6 list-box-wp S" data-cat="S">
+                                <div class="list-box text-center">
+                                    <div class="player-img">
+                                        <img src="Jp men NV Team/08 Sekita/1.jpeg" alt="">
+                                    </div>
+                                    <div class="player-no">
+                                        <h5>08</h5>
+                                    </div>
+                                    <div class="player-name">
+                                        <h3 class="h3-name">Masahiro Sekita</h3>
+                                    </div>
+                                    <div class="player-info">
+                                        <ul type="none">
+                                            <li>
+                                                <p>Position</p>
+                                                <b>S</b>
+                                            </li>
+                                            <li>
+                                                <p>Club</p>
+                                                <b>JTEKT Stings</b>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="player-list-footer">
+                                        <a href="08Sekita.html" class="btn btn-danger">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 10 -->
+                            <div class="col-lg-4 col-sm-6 list-box-wp MB" data-cat="MB">
+                                <div class="list-box text-center">
+                                    <div class="player-img">
+                                        <img src="Jp men NV Team/10 Kentaro/1.jpeg" alt="">
+                                    </div>
+                                    <div class="player-no">
+                                        <h5>10</h5>
+                                    </div>
+                                    <div class="player-name">
+                                        <h3 class="h3-name">Kentaro Takahashi</h3>
+                                    </div>
+                                    <div class="player-info">
+                                        <ul type="none">
+                                            <li>
+                                                <p>Position</p>
+                                                <b>MB</b>
+                                            </li>
+                                            <li>
+                                                <p>Club</p>
+                                                <b>JTEKT Stings</b>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="player-list-footer">
+                                        <a href="10Kentaro.html" class="btn btn-danger">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 11 -->
+                            <div class="col-lg-4 col-sm-6 list-box-wp OH" data-cat="OH">
+                                <div class="list-box text-center">
+                                    <div class="player-img">
+                                        <img src="Jp men NV Team/11 Shoma/1.jpeg" alt="">
+                                    </div>
+                                    <div class="player-no">
+                                        <h5>11</h5>
+                                    </div>
+                                    <div class="player-name">
+                                        <h3 class="h3-name">Shoma Tomita</h3>
+                                    </div>
+                                    <div class="player-info">
+                                        <ul type="none">
+                                            <li>
+                                                <p>Position</p>
+                                                <b>OH</b>
+                                            </li>
+                                            <li>
+                                                <p>Club</p>
+                                                <b>Osaka Bluteon</b>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="player-list-footer">
+                                        <a href="11Shoma.html" class="btn btn-danger">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 12 -->
+                            <div class="col-lg-4 col-sm-6 list-box-wp OH" data-cat="OH">
+                                <div class="list-box text-center">
+                                    <div class="player-img">
+                                        <img src="Jp men NV Team/12 Ran/5.jpeg" alt="">
+                                    </div>
+                                    <div class="player-no">
+                                        <h5>12</h5>
+                                    </div>
+                                    <div class="player-name">
+                                        <h3 class="h3-name">Ran Takahashi</h3>
+                                    </div>
+                                    <div class="player-info">
+                                        <ul type="none">
+                                            <li>
+                                                <p>Position</p>
+                                                <b>OH</b>
+                                            </li>
+                                            <li>
+                                                <p>Club</p>
+                                                <b>Vero Volley Monza</b>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="player-list-footer">
+                                        <a href="12Ran.html" class="btn btn-danger">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 14 -->
+                            <div class="col-lg-4 col-sm-6 list-box-wp OH" data-cat="OH">
+                                <div class="list-box text-center">
+                                    <div class="player-img">
+                                        <img src="Jp men NV Team/14 Yuki/1.jpeg" alt="">
+                                    </div>
+                                    <div class="player-no">
+                                        <h5>14</h5>
+                                    </div>
+                                    <div class="player-name">
+                                        <h3 class="h3-name">Yuki Ishikawa (C)</h3>
+                                    </div>
+                                    <div class="player-info">
+                                        <ul type="none">
+                                            <li>
+                                                <p>Position</p>
+                                                <b>OH</b>
+                                            </li>
+                                            <li>
+                                                <p>Club</p>
+                                                <b>Allianz Milano</b>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="player-list-footer">
+                                        <a href="14Yuki.html" class="btn btn-danger">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 15 -->
+                            <div class="col-lg-4 col-sm-6 list-box-wp OH" data-cat="OH">
+                                <div class="list-box text-center">
+                                    <div class="player-img">
+                                        <img src="Jp men NV Team/15 Masato/1.jpeg" alt="">
+                                    </div>
+                                    <div class="player-no">
+                                        <h5>15</h5>
+                                    </div>
+                                    <div class="player-name">
+                                        <h3 class="h3-name">Masato Kai</h3>
+                                    </div>
+                                    <div class="player-info">
+                                        <ul type="none">
+                                            <li>
+                                                <p>Position</p>
+                                                <b>OH</b>
+                                            </li>
+                                            <li>
+                                                <p>Club</p>
+                                                <b>Paris Volley</b>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="player-list-footer">
+                                        <a href="15Kai.html" class="btn btn-danger">View Details</a>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- 20 -->
+                            <div class="col-lg-4 col-sm-6 list-box-wp L" data-cat="L">
+                                <div class="list-box text-center">
+                                    <div class="player-img">
+                                        <img src="Jp men NV Team/20 Tomohiro/1.jpeg" alt="">
+                                    </div>
+                                    <div class="player-no">
+                                        <h5>20</h5>
+                                    </div>
+                                    <div class="player-name">
+                                        <h3 class="h3-name">Tomohiro Yamamoto</h3>
+                                    </div>
+                                    <div class="player-info">
+                                        <ul type="none">
+                                            <li>
+                                                <p>Position</p>
+                                                <b>L</b>
+                                            </li>
+                                            <li>
+                                                <p>Club</p>
+                                                <b>Panasonic Panthers</b>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="player-list-footer">
+                                        <a href="20Yamamoto.html" class="btn btn-danger">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End player list -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- End Players -->
+
+         <!-- Start Coach Section -->
+         <section class="coach-section">
+            <div class="coach-wp">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="title_text text-center mb-5">
+                            <p class="sub-title mb-3">Coach</p>
+                            <h2 class="h2-title">Professional <span>Coach</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="container bg-light">  
+                    <div class="row py-5">
+                        <div class="col-lg-5">
+                            <div class="coach-img">
+                                <img src="Jp men NV Team/VNL img/coach.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="coach-info-box">
+                                        <div class="coach-info-box-top">
+                                            <div class="star-rating-wp">
+                                                <div class="star-rating">
+                                                    <span class="star-rating_fill" style="width: 85%;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="coach-info-text">
+                                            <h3 class="h3-title">
+                                                Career as coach
+                                            </h3>
+                                            <p>Since 1998 he has coached in France, first at AS Cannes, then, since 2000, at Arago de Sète. Starting from 2001 he was a head coach of the France men's national volleyball team.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="coach-info-box">
+                                        <div class="coach-info-box-top">
+                                            <div class="star-rating-wp">
+                                                <div class="star-rating">
+                                                    <span class="star-rating_fill" style="width: 80%;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="coach-info-text">
+                                            <h3 class="h3-title">
+                                             Head coach
+                                            </h3>
+                                            <p>On 29 March 2016, he signed a contract with PGE Skra Bełchatów and replaced the previous head coach, Miguel Angel Falasca.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="coach-info-box">
+                                        <div class="coach-info-box-top">
+                                            <div class="star-rating-wp">
+                                                <div class="star-rating">
+                                                    <span class="star-rating_fill" style="width: 89%;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="coach-info-text">
+                                            <h3 class="h3-title">
+                                             Head coach
+                                            </h3>
+                                            <p>On 29 March 2016, he signed a contract with PGE Skra Bełchatów and replaced the previous head coach, Miguel Angel Falasca.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="coach-info-box">
+                                        <div class="coach-info-box-top">
+                                            <div class="star-rating-wp">
+                                                <div class="star-rating">
+                                                    <span class="star-rating_fill" style="width: 100%;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="coach-info-text">
+                                            <h3 class="h3-title">
+                                             Head coach
+                                            </h3>
+                                            <p>On 29 March 2016, he signed a contract with PGE Skra Bełchatów and replaced the previous head coach, Miguel Angel Falasca.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </section>
+           <!-- End Coach Section -->
+
+            <!-- Start About -->
+    <div class="about mx-md-2 mx-lg-2">  
+        <h3 class="about-title ps-3">About <span>VNL</span></h3>
+        <div class="container bg-light">    
+            <div class="row col-12 py-5">
+                <div class="about-1 col-lg-4">
+                    <h4 class="py-3">Our Story</h4>
+                    <p>The Japan men's national volleyball team (Japanese: 男子バレーボール日本代表) represents Japan in international volleyball competitions and friendly matches, governed by Japan Volleyball Association.<br>
+                    Their nickname is "RYUJIN NIPPON (龍神 NIPPON)", meaning "Japanese Dragon God" or "Dragon God of Japan" in Japanese.
+                    </p>
+                    <div class="mt-lg-5 d-none d-md-block">
+                        <button class="btn btn-danger btn-lg">Learn More !</button>
+                    </div>
+                </div>
+                <div class="about-2 col-lg-4">
+                    <img src="Jp men NV Team/VNL img/wp 1.jpeg" alt="">
+                </div>
+                <div class="about-3 col-lg-4">
+                    <h4 class="py-3">Our Vision</h4>
+                    <ul type="circle">
+                        <li>Olympic Games</li>
+                        <li>World Chanmpionship</li>
+                        <li>World Cup</li>
+                        <li>Nations League</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- End About -->
+
+
+         <!-- Start Slider -->  
+         <main class='gallery'>
+            <div class='left'>
+              <div class='inner'>
+                <img class='item' src='Jp men NV Team/VNL img/vnl logo 2.png' data-counter='1'>
+                <img class='item' src='Jp men NV Team/VNL img/vnl logo 3.png' data-counter='2'>
+                <img class='item' src='Jp men NV Team/VNL img/vnl logo 4.png' data-counter='3'>
+                <img class='item' src='Jp men NV Team/VNL img/vnl logo 5.png' data-counter='4'>
+                <img class='item' src='Jp men NV Team/VNL img/vnl logo 6.png' data-counter='5'>
+              </div>
+            </div>
+            <div class='right'>
+              <div class='inner'>
+                <img class='item' src='Jp men NV Team/VNL img/vnl logo 7.png' data-counter='1'>
+                <img class='item' src='Jp men NV Team/VNL img/vnl logo 8.png' data-counter='2'>
+                <img class='item' src='Jp men NV Team/VNL img/vnl logo 9.jpeg' data-counter='3'>
+                <img class='item' src='Jp men NV Team/VNL img/vnl logo 10.png' data-counter='4'>
+                <img class='item' src='Jp men NV Team/VNL img/vnl logo 12.png' data-counter='5'>
+              </div>
+            </div>
+          </main>
+
+         <!-- End Slider -->
+
+
+         <!-- Start Footer -->
+      <section class="footer-info bg-black">
+        <div class="footer mx-md-2 mx-lg-2">
+            <div class="container py-5">
+                <div class="row col-12">
+                    <div class="footer col-lg-3 text-white">
+                        <div class="footer-text">
+                            <h3>Japan Men's Volleyball</h3>
+                            <p>The Japan men's national volleyball team (Japanese: 男子バレーボール日本代表) represents Japan in international volleyball competitions and friendly matches, governed by Japan Volleyball Association.</p>
+                        </div>
+                        <div class="footer-end">
+                            <h4>Follow Us</h4>
+                            <div class="footer-icon">
+                                <a href=""><i class="fa-brands fa-square-youtube fa-2x"></i></a>
+                                <a href=""><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+                                <a href=""><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+                                <a href=""><i class="fa-brands fa-square-x-twitter fa-2x"></i></a>    
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="footer col-lg-3 text-white">
+                        <h3>Quick Links</h3>
+                        <ul type="circle">
+                            <li><a href="">Get Started</a></li>
+                            <li><a href="">Our Team</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Need Helps</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer col-lg-3 text-white">
+                        <h3>Popular Tag</h3>
+                        <ul type="circle">
+                            <li><a href="">Our Sport</a></li>
+                            <li><a href="">Volleyball</a></li>
+                            <li><a href="">Our News</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer col-lg-3 text-white">
+                        <h3>Our Sprots</h3>
+                        <div class="footer-img">
+                            <img src="Jp men NV Team/VNL img/team 1.png" alt="">
+                            <img src="Jp men NV Team/12 Ran/4.jpeg" alt="">
+                            <img src="Jp men NV Team/05 Tatsunori/7.jpeg" alt="">
+                        </div>
+                        <div class="footer-img">
+                            <img src="Jp men NV Team/VNL img/team 4.jpg" alt="">
+                            <img src="Jp men NV Team/14 Yuki/3.jpeg" alt="">
+                            <img src="Jp men NV Team/VNL img/team 6.jpeg" alt="">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </section>
+     
+       <!-- End Footer -->
+
+       <!-- plug in script start -->
+        <script>
+            const leftItems = document.querySelectorAll(".left .item");
+const rightItems = document.querySelectorAll(".right .item");
+const limit = leftItems.length;
+
+const leftCoordinates = [
+  { x: -10, z: -4 },
+  { x: -20, z: -8 },
+  { x: -30, z: -12 },
+  { x: -40, z: -16 },
+  { x: 10, z: -4 }
+];
+
+const rightCoordinates = [
+  { x: 10, z: -4 },
+  { x: 20, z: -8 },
+  { x: 30, z: -12 },
+  { x: 40, z: -16 },
+  { x: -10, z: -4 }
+];
+
+const itemPos = (item,{x,z}) => item.style.transform = `translate3d(${x}rem,0,${z}rem)`;
+
+function animateItems(item,coordinates) {
+  const count = Number(item.dataset.counter);
+  itemPos(item,coordinates[count-1]);
+  item.dataset.counter = `${count === limit ? 1 : count + 1}`;
+}
+
+function activate() {
+  setInterval(() => {
+    for (let i = 0; i < limit; i++) {
+      animateItems(leftItems[i],leftCoordinates);
+      animateItems(rightItems[i],rightCoordinates);
+    }
+  },2000);
+};
+
+window.addEventListener('load',activate,false);
+0
+        </script> 
+        <!-- plug in script end -->
+
+        <!-- Login Script Start -->
+         <script>
+
+        const wrapper = document.querySelector('.wrapper');
+        const loginLink = document.querySelector('.login-link');
+        const registerLink = document.querySelector('.register-link');
+
+        const btnPopup = document.querySelector('btnLogin-popup');
+
+        const iconClose = document.querySelector('.icon-close');
+
+        registerLink.addEventListener('click', ()=>{
+            wrapper.classList.add('active');
+        });
+
+        loginLink.addEventListener('click', ()=>{
+            wrapper.classList.remove('active');
+        });
+
+        btnPopup.addEventListener('click', ()=>{
+            wrapper.classList.add('active-popup');
+        });
+
+        iconClose.addEventListener('click', ()=>{
+            wrapper.classList.remove('active-popup');
+        });
+
+
+        </script>
+        
+
+        <!-- Login Script End -->
+
+    <script src="jquery-3.7.1.min.js"></script> 
+    <script src="main.js"></script>    
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
+</body>
+</html>

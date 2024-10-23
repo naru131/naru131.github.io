@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect Lesson</title>
+</head>
+<body>
+   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum ex totam natus suscipit necessitatibus sint ipsa quaerat veritatis dignissimos nemo eos hic dolorum ut odit sed doloribus, alias vero.</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <button id="fade_out">Fadeout</button>
+    <button id="fade_in">FadeIn</button>
+    <button id="Fade_to1">FadeTo 1</button>
+    <button id="Fade_to2">FadeTo 2</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $('p').hide(1000,function(){
+                    alert("p hide");
+                });
+            })
+            $('#show').click(function(){
+                $('p').show('fast');
+            })
+            $(toggle).click(function(){
+                $('p').toggle('slow');
+            })
+            $('#fade_out').click(function(){
+                $('p').fadeOut(3000);
+            })
+            $('#fade_in').click(function(){
+                $('p').fadeIn(3000);
+            })
+            $('#fade_toggle').click(function(){
+                $('p').fadeToggle(3000);
+            })
+            $('#Fade_to1').click(function(){
+                $('p').fadeTo(2000,0.1);
+            })
+            $('#Fade_to2').click(function(){
+                $('p').fadeTo(2000,1);
+            })
+        });
+    </script>
+</body>
+</html>

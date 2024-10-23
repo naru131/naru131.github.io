@@ -1,0 +1,43 @@
+@font-face {
+    font-family:"Bona_Nova_SC";
+    src: url('../Bona_Nova_SC/BonaNovaSC-Regular.ttf');
+}
+
+*{
+    font-family: "Bona_Nova_SC";
+}
+
+/* Start Navagation */
+.active_page{
+    color: red !important;
+}
+
+.nav_hover:hover{
+    color: red !important;
+}
+
+/* End Navagation */
+
+/* Start Carousel */
+.carousel_text{
+    top: 35%;
+    left: 10%;
+}
+
+/* category */
+
+.card_hover:hover{
+    /* background-color: rgb(243, 75, 75) !important; */
+    /* color: white; */
+    box-shadow: -2px 3px 10px 0px rgba(224,87,87,1);
+}
+
+/* about */
+.border_danger{
+    border-left: 10px solid red;
+}
+
+.about_divided{
+    border: 5px solid red;
+    width: 100px;
+}

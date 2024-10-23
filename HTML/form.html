@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Lesson</title>
+</head>
+<body>
+    <h1>Student Registeration</h1>
+    <form action="request.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="stu_name" id="name">
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="stu_email" id="email">
+        <br><br>
+        <label for="phone">Phone</label>
+        <input type="number" name="stu_phone" id="phone">
+        <br><br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="stu_dob" id="dob">
+        <br><br>
+        <label for="passport">Passport</label>
+        <input type="file" accept=".png,.jpeg,.jpg,image/*" name="stu_passport" id="passport">
+        <br><br>
+        <label for="">Gender</label>
+        <br><br>
+        <input type="radio" name="gender" id="male" value="Male"><label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="Female"><label for="femlae">Female</label>
+        <br><br>
+        <label for="year">Year</label>
+        <select name="year" id="year">
+            <option value="">Choose Year</option>
+            <option value="1">First Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+        </select>
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="stu_password" id="password">
+        <br><br>
+        <label for="">HOBBY</label>
+        <br>
+        <input type="checkbox" name="movies" id="movies" value="Movies"><label for="movies">Movies</label>
+        <input type="checkbox" name="hiking" id="hiking" value="Hiking"><label for="hiking">Hiking</label>
+        <input type="checkbox" name="travelling" id="travelling" value="Travelling"><label for="travelling">Travelling</label>
+        <br><br>
+        <label for="address">Address</label>
+        <textarea name="stu_address" id="address" cols="30" rows="15"></textarea>
+        <br><br>
+        <input type="time" name="" id="">
+        <br>
+        <input type="datetime-local" name="" id="">
+        <br>
+        <input type="week" name="" id="">
+        <br>
+        <input type="color" name="" id="">
+        <br>
+        <input type="range" min="0" max="100" name="" id="">
+        <br>
+        <input type="text" name="" id="" required>
+        <br>
+        <input type="number" name="placeholder" id="" placeholder="sample">
+        <br>
+        <input type="text" name="" id="" readonly> 
+        <!-- data can import -->
+         <br>
+         <input type="text" name="" id="" disabled>
+         <!-- data can't import -->
+         <br>
+         <input type="text" name="def_value" id="" value="25">
+         <br><br>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

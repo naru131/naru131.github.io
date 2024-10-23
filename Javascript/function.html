@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciton Lesson</title>
+</head>
+<body>
+    <h1>Funciton Lesson</h1>
+    <script>
+
+        function fullName(){
+            document.write("My Name is Naru");
+        }
+
+        fullName();
+
+        //Parameter funciton
+
+        function sum (num1 , num2){
+            let result = num1 + num2;
+            document.write(`Your sum result is = ${result} <br>`);
+        }
+
+        sum (5,8);
+        sum (102,10);
+        sum(145, 0);
+
+        //default parameter funciton
+        function sub(num1=100, num2=50){
+            document.write(`Your Sub result is = ${num1 - num2} <br>`);
+        }
+        sub();
+        sub(1200, 10);
+        sub(500);
+
+        //return fucniton
+        function multi(num1,num2){
+            let result = num1 * num2;
+            return result ;
+        }
+
+        // multi (2,5);
+        let multiResult = multi (2,5);
+        document.write(`Result is =" + mulitResult +" <br>`);
+
+
+    </script>
+</body>
+</html>

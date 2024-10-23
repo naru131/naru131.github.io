@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="icon" href="Image/logo-black.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="Plug In/css.plug-in.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <span class="icon-close">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" required="" id="">
+                    <label for="eamil">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" required="" id="">
+                    <label for="eamil">Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label for=""><input type="checkbox" name="" id="">Remember Me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn-signin">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+                <!-- For Register -->
+
+                <span class="icon-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+        <div class="form-box register">
+            <h2>Registeration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" required="" id="">
+                    <label for="name">Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" required="" id="">
+                    <label for="eamil">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" required="" id="">
+                    <label for="eamil">Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label for=""><input type="checkbox" name="" id="">I agree the terms & conditions</label>
+                    
+                </div>
+                <button type="submit" class="btn-signin">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="" class="login-link"> Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+     <!-- Login Script Start -->
+     <script>
+
+        const wrapper = document.querySelector('.wrapper');
+        const loginLink = document.querySelector('.login-link');
+        const registerLink = document.querySelector('.register-link');
+
+        const btnPopup = document.querySelector('btnLogin-popup');
+
+        const iconClose = document.querySelector('.icon-close');
+
+        registerLink.addEventListener('click',()=>{
+            wrapper.classList.add('active');
+        });
+
+        loginLink.addEventListener('click',()=>{
+            wrapper.classList.remove('active');
+        });
+
+        btnPopup.addEventListener('click',()=>{
+            wrapper.classList.add('active-popup');
+        });
+
+        iconClose.addEventListener('click',()=>{
+            wrapper.classList.remove('active-popup');
+        });
+
+
+        </script>
+        
+
+        <!-- Login Script End -->
+
+    <script src="jquery-3.7.1.min.js"></script>     
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
+</body>
+</html>

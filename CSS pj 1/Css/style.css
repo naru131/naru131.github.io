@@ -1,0 +1,371 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Start Nav */
+
+.nav_logo{
+    width: 180px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 100px;
+}
+
+.nav_item{
+    float: right;
+}
+
+.nav_item li{
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.nav_item li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.nav_item li a:hover{
+    color: palevioletred;
+}
+
+.cart_noti{
+    position: relative;
+    top: -20px;
+    right: 75px;
+    background-color: red;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+}
+
+.nav{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cart_nav_item{
+    margin-right: 70px;
+}
+
+/* Start Banner */
+
+.carousel_img{
+    width: 100%
+}
+
+.carousel_text{
+    position: absolute;
+    top: 260px;
+    left: 85px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 40px;
+}
+
+carousel_text h2{
+    margin-bottom: 15px;
+}
+
+.shop_now{
+    margin-top: 15px;
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid red;
+    border-radius: 5px;
+
+}
+
+.shop_now:hover{
+    cursor: pointer;
+}
+
+.colum_div{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.rowone, .rowtwo, .rowthree, .rowfour{
+    border: solid rgb(160, 158, 158);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* End Service */
+
+/* Start Promotion */
+
+.promotion_title{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.divided{
+    width: 80px;
+    border: 2px solid red;
+    margin-left: 50px;
+}
+
+.promotion{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 10px 20px;
+    grid-column-gap: 30px;
+}
+
+.promotion_img{
+    width: 300px;
+
+}
+
+.promotion_item{
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: relative;
+}
+
+.promotion_item_name{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.promotion_price{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.discount_price{
+    color: red;
+    display: block;
+}
+
+.normal_price{
+    color: red;
+    text-decoration: line-through;
+}
+
+/* Start New Arrival */
+
+.New_arrival{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 10px 20px;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+}
+
+.new_arrival_img{
+    width: 250px;
+    height: 350px;
+}
+
+.New_arrival_item{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0px 25px 20px;
+    position: relative;
+}
+
+.new_arrival_text{
+    display: inline-block;
+}
+
+.whist_list{
+    float: right;
+}
+
+.new_arrival_icon{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    opacity: 0;
+}
+
+.new_arrival_icon a{
+    border: 1px solid red;
+    background-color: gray;
+    color: red;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.new_arrival_icon a:hover{
+    background-color: red;
+    color: white;
+}
+
+.New_arrival_item:hover .new_arrival_icon{
+    opacity: 1;
+}
+
+.new_arrival_img:hover{
+ opacity: 0.3;
+}
+
+/* Start Subscribe */
+
+.subscriber{
+    background-color: red;
+    padding: 50px 0px;
+    margin-top: 50px;
+}
+
+.subscriber_img{
+    width: 200px;
+}
+
+.subscriber div{
+    float: left;
+    width: 40%;
+    margin-left: 200px;
+    color: white;
+}
+
+.subscriber div p{
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.subscriber_input{
+    width: 400px;
+    height: 25px;
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.subscriber_btn{
+    width: 100px;
+    height: 25px;
+    color: white;
+    outline: none;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 0px 5px 5px 0px;
+
+}
+/* End Subscirber */
+
+/* Start News */
+
+.news{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 10px 20px;
+    grid-column-gap: 30px;
+}
+
+.news_img{
+    width: 250px;
+}
+
+.news > div{
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.news_text{
+    padding: 10px 20px 20px;
+}
+
+.news_text h3{
+    margin-bottom: 10px;
+}
+
+.news_text p{
+    padding: 5px 0px 10px;
+}
+
+.read_more{
+    border: 1px solid red;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: red;
+    border-radius: 5px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.read_more:hover{
+    background-color: red;
+    color: white;
+}
+
+.news_date{
+    opacity: .8;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.news_img:hover{
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+}
+
+.img_hover{
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* End News */
+
+/* Start Footer */
+
+.footer{
+    background-color: black;
+    margin-top: 50px;
+    color: white;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 600px 150px 150px auto;
+}
+
+.footer_divided{
+    width: 80px;
+    border: 2px solid red;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.footer_about{
+    margin-left: 100px;
+}
+
+.footer_about p{
+    width: 70%;
+    line-height: 15px;
+}
+
+.footer_nav_item{
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.footer_address{
+    margin-top: 20px;
+}
+
+.address_icon{
+    padding-right: 10px;
+}
+
+.footer_social_icon a{
+    margin-top: 20px;
+    color: white;
+    margin-right: 20px;
+    display: inline-block;
+}
